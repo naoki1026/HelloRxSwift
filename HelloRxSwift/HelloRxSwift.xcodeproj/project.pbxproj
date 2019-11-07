@@ -252,7 +252,7 @@
 				};
 			};
 			buildConfigurationList = 6363541E237311D500A1E08B /* Build configuration list for PBXProject "HelloRxSwift" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -593,7 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = arakawan.HelloRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -612,7 +612,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = arakawan.HelloRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
