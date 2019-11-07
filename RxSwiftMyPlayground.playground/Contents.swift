@@ -1,14 +1,54 @@
 import UIKit
 import RxSwift
+import RxCocoa
+
+//////////////////////////////////////////////////
+
+//let disposeBag = DisposeBag()
+//let relay = BehaviorRelay(value: "Initial Value")
+//
+//relay.asObservable()
+//    .subscribe {
+//        print($0)
+//}
+//
+//relay.accept("Hello World")
+
+//////////////////////////////////////////////////
+
+//let disposeBag = DisposeBag()
+//let relay = BehaviorRelay(value: [String]())
+//relay.accept(["Item 1"])
+//
+//relay.asObservable()
+//    .subscribe {
+//        print($0)
+//}
+
+//relay.accept("Hello World")
+
+//////////////////////////////////////////////////
+
+//let disposeBag = DisposeBag()
+//let relay = BehaviorRelay(value: ["Item 1"])
+//relay.accept(relay.value + ["Item 2"])
+//
+//relay.asObservable()
+//    .subscribe {
+//        print($0)
+//}
+
+//////////////////////////////////////////////////
 
 let disposeBag = DisposeBag()
-let variable = Variable([String]())
+let relay = BehaviorRelay(value: ["Item 1"])
+var value = relay.value
+value.append("Item2")
+value.append("Item3")
 
-variable.value.append("Item1")
+relay.accept(value)
 
-variable.asObservable()
+relay.asObservable()
     .subscribe {
         print($0)
 }
-
-variable.value.append("Item2")
