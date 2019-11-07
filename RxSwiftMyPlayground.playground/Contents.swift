@@ -1,6 +1,8 @@
 import UIKit
 import RxSwift
 
+/////////////////////////////////////////
+
 let observable = Observable.just(1)
 let observable2 = Observable.of(1,2,3)
 let observavle3 = Observable.of([1,2,3])
@@ -34,5 +36,12 @@ observable4.subscribe { event in
 observable4.subscribe(onNext: {element in
     print(element)
 })
+
+let subscription4 = observable4.subscribe(onNext: {element in
+    print(element)
+})
+
+subscription4.dispose()
+
 
 /////////////////////////////////////////
